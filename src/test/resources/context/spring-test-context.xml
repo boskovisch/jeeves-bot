@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="queueManagerServiceTest" class="com.blackie.jeevesbot.services.QueueManagerServiceTest">
+        <property name="queueManagerService" ref="queueManagerService"/>
+    </bean>
+
+    <bean id="queueManagerService" class="com.blackie.jeevesbot.services.impl.QueueManagerServiceImpl">
+        <constructor-arg ref="queueService"/>
+        <constructor-arg ref="messages"/>
+    </bean>
+
+    <bean id="queueService" class="com.blackie.jeevesbot.services.impl.QueueServiceImpl"/>
+    <bean id="messages" class="com.blackie.jeevesbot.components.Messages"/>
+</beans>
