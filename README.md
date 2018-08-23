@@ -46,5 +46,6 @@ if not:
 
 `Alright alright alright @User! Sit tight, and wait a bit until your turn`
 
+## License
 This of Software is licensed under the: 
 GNU General Public License v3 (GPL-3)
