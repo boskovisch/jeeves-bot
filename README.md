@@ -45,3 +45,6 @@ If the queue is empty the response will be:
 if not:
 
 `Alright alright alright @User! Sit tight, and wait a bit until your turn`
+
+This of Software is licensed under the: 
+GNU General Public License v3 (GPL-3)
